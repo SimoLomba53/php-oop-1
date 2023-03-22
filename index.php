@@ -4,13 +4,24 @@
     public $regista;
     public $durata;
     public $annodiuscita;
+    public $generation = "WCK";
 
-     function __construct($titolo,$regista,$durata,$annodiuscita) {
+    public function whatgenis($generation){
+        if ($generation >= 2000){
+            return $this->generation = "NEXT GEN";
+        }if else{
+            return $this->generation = "OLD GEN";
+        };
+     };
+
+     function __construct($titolo,$regista,$durata,$annodiuscita,$generation) {
      $this->titolo=$titolo;
      $this->regista=$regista;
      $this->durata=$durata;
      $this->annodiuscita=$annodiuscita;
-  }
+     $this->generation=whatgenis($generation);
+
+   };
  }
 
 
