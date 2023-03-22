@@ -9,7 +9,7 @@
     public function whatgenis($generation){
         if ($generation >= 2000){
             return $this->generation = "NEXT GEN";
-        }if else{
+        }else{
             return $this->generation = "OLD GEN";
         };
      };
@@ -22,7 +22,7 @@
      $this->generation=whatgenis($generation);
 
    };
- }
+ };
 
 
   $pulpfiction=new Movie("Pulp Fiction","Quentin Tarantino","120min",1994); 
