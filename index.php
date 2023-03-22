@@ -15,8 +15,9 @@
 
 
   $pulpfiction=new Movie("Pulp Fiction","Quentin Tarantino","120min",1994); 
+  $inception=new Movie("Inception","Christopher Nolan","140min",2010); 
   
 
-  var_dump($pulpfiction);
+  var_dump($pulpfiction,$inception);
 
 ?>
