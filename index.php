@@ -4,14 +4,18 @@
     public $regista;
     public $durata;
     public $annodiuscita;
+
+     function __construct($titolo,$regista,$durata,$annodiuscita) {
+     $this->titolo=$titolo;
+     $this->regista=$regista;
+     $this->durata=$durata;
+     $this->annodiuscita=$annodiuscita;
   }
+ }
 
 
-  $pulpfiction= new Movie(); 
-  $pulpfiction->titolo= "Pulp Fiction";
-  $pulpfiction->regista="Quentin Tarantino";
-  $pulpfiction->durata="120min";
-  $pulpfiction->annodiuscita=1994;
+  $pulpfiction=new Movie("Pulp Fiction","Quentin Tarantino","120min",1994); 
+  
 
   var_dump($pulpfiction);
 
